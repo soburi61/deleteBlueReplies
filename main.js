@@ -28,3 +28,4 @@ let config = { childList: true, subtree: true };
 
 // MutationObserverを開始
 observer.observe(document, config);
+

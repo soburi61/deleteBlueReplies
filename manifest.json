@@ -3,6 +3,10 @@
     "description": "Remove replies for blue accounts",
     "version": "0.2",
     "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
     "content_scripts": [
       {
         "matches": ["https://twitter.com/*/status/*"],
@@ -13,5 +17,12 @@
       "16": "x_verified_badge_16.png",
       "48": "x_verified_badge_48.png",
       "128": "x_verified_badge_128.png"
-    }
-  }
+    },
+    "action": {
+      "default_popup": ""
+    },
+    "host_permissions": [  // ホストへのアクセス権限の設定
+      "https://twitter.com/"  // https://example.com/ へのアクセス権限を要求
+    ]
+}
+
