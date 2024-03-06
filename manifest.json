@@ -1,12 +1,17 @@
 {
     "name": "deleteBlueReplies",
     "description": "Remove replies for blue accounts",
-    "version": "0.1",
+    "version": "0.2",
     "manifest_version": 3,
     "content_scripts": [
       {
         "matches": ["https://twitter.com/*/status/*"],
         "js": ["main.js"]
       }
-    ]
+    ],
+    "icons": {
+      "16": "x_verified_badge_16.png",
+      "48": "x_verified_badge_48.png",
+      "128": "x_verified_badge_128.png"
+    }
   }
