@@ -1,0 +1,2 @@
+# deleteBlueReplies
+Xからblueのリプレイを非表示にする拡張機能
